@@ -1,0 +1,35 @@
+{
+	"name": "WordPress React Starter", 
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"forwardPorts": [8080],
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"configureZshAsDefaultShell": true,
+			"installOhMyZsh": true,
+			"upgradePackages": true
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"nodeGypDependencies": true,
+			"version": "18"
+		}
+	},
+
+	"postCreateCommand": "chmod +x \"$(pwd)\"/.devcontainer/setup.sh && \"$(pwd)\"/.devcontainer/setup.sh",
+
+	"customizations": {
+		"vscode" : {
+			"extensions" : [
+				"felixfbecker.php-pack",
+				"wordpresstoolbox.wordpress-toolbox",
+				"johnbillion.vscode-wordpress-hooks",
+				"jawandarajbir.react-vscode-extension-pack",
+				"planbcoding.vscode-react-refactor",
+				"nhedger.inertia",
+				"mikestead.dotenv"
+			]
+		}
+	}
+}

@@ -1,0 +1,51 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*/
+web/app/themes/twentytwentythree/
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+web/app/cache/*
+
+# WordPress
+web/wp
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml
+
+
+# dependencies
+web/app/themes/wpreact/node_modules
+web/app/themes/wpreact/.pnp
+web/app/themes/wpreact.pnp.js
+web/app/themes/wpreact/vendor
+
+# testing
+web/app/themes/wpreact/coverage
+
+# production
+web/app/themes/wpreact/dist
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
